@@ -1,0 +1,14 @@
+.formInput {    
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=1);
+}
+
+.app {   
+    background: linear-gradient(135deg, rgba(180, 197, 207, 1) 0%, rgba(242, 246, 248, 1) 25%, rgba(217, 226, 232, 1) 50%, rgba(180, 197, 207, 1) 75%, rgba(225, 240, 249, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4c5cf', endColorstr='#e1f0f9', GradientType=1);
+}
+
+.taskItem {    
+    background: linear-gradient(to right, rgba(167, 221, 235, 1) 0%, rgba(153, 223, 240, 1) 41%, rgba(204, 239, 255, 1) 72%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a7ddeb', endColorstr='#ffffff', GradientType=1);
+}
