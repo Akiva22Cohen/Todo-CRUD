@@ -27,19 +27,6 @@ function TaskInput(props) {
   const onSubForm = async (_) => {
     if (props.children) {
       if (props.children.name !== _.name || props.children.time !== _.time) {
-        // const temp_ar = tasks_ar.map((item) => {
-        //   if (item.id === props.children.id)
-        //     item = {
-        //       ...props.children,
-        //       ..._,
-        //       time: _.time && _.time.replace("T", " "),
-        //       edit: new Date().toLocaleString(),
-        //     };
-        //   return item;
-        // });
-
-        // setTasksAr(temp_ar);
-
         const ovj = {
           ...props.children,
           ..._,
@@ -64,7 +51,6 @@ function TaskInput(props) {
         Completed: false,
         edit: "",
       };
-      // setTasksAr([{ ...ovj }, ...tasks_ar]);
 
       const res = await FetchData(`http://localhost:3000/tasks`, "POST", ovj);
       setTasksAr(res);

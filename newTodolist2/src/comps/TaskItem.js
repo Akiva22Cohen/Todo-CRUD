@@ -12,9 +12,6 @@ function TaskItem(props) {
   const { tasks_ar, setTasksAr, FetchData } = useContext(GlobalContext);
 
   const removeSingleTask = async () => {
-    // const temp_ar = tasks_ar.filter((item) => item.id !== id);
-    // setTasksAr(temp_ar);
-
     const res = await FetchData(`http://localhost:3000/tasks/${id}`, "DELETE");
     setTasksAr(res);
   };

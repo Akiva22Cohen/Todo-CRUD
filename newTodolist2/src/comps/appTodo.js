@@ -17,21 +17,12 @@ function AppTodo() {
   const buttonRef = useRef(null);
 
   useEffect(() => {
-    // const storedTasks = localStorage.getItem("tasks");
-
-    // if (storedTasks && storedTasks !== undefined) {
-    //   setTasksAr(JSON.parse(storedTasks));
-    // }
     async function fetchData() {
       const response = await FetchData("http://localhost:3000/tasks");
       setTasksAr(response);
     }
     fetchData();
   }, []);
-
-  // useEffect(() => {
-  //   localStorage.setItem("tasks", JSON.stringify(tasks_ar));
-  // }, [tasks_ar]);
 
   const removeAllTasks = () => {
     setTasksAr([]);

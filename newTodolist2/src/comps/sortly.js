@@ -37,7 +37,6 @@ function Sortly({ tasks_ar, setTasksAr, setTasksArSort }) {
         sort_ar = [...sort_ar, ...completedTasks]
 
         setTasksArSort(sort_ar);
-        // localStorage.setItem('tasks', JSON.stringify(sort_ar));
     }
 
     useEffect(() => {
